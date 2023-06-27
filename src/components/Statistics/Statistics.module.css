@@ -1,0 +1,38 @@
+.list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+	width: 520px;
+	padding: 20px;
+
+	border: var(--line-border);
+	border-radius: 8px;
+}
+
+.item {
+	display: flex;
+	padding-bottom: 8px;
+}
+
+.label,
+.quantity {
+	padding: 4px;
+
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 1.63;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+}
+
+.quantity {
+	display: flex;
+	justify-content: center;
+
+	width: 60px;
+
+	background-color: var(--color-card);
+	border: var(--line-border);
+	border-radius: 8px;
+}
