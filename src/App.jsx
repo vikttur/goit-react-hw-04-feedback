@@ -16,17 +16,15 @@ export default function App() {
   };
 
   const onLeaveFeedback = option => {
-    const optionValue = options[option] + 1;
-
     switch (option) {
       case 'good':
-        setGood(optionValue);
+        setGood(prevState => prevState + 1);
         break;
       case 'neutral':
-        setNeutral(optionValue);
+        setNeutral(prevState => prevState + 1);
         break;
       case 'bad':
-        setBad(optionValue);
+        setBad(prevState => prevState + 1);
         break;
       default:
     }
